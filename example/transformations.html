@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            * {
+                border: 1px dashed black;
+            }
+            img {
+                border: 5px solid black;
+                border-radius: 50%;
+                transition: all 2s ease-in-out;
+            }
+            img:hover {
+                /* transform: rotateY(85deg) rotateX(20deg) rotateZ(10deg); */
+                /* transform: scale(0.2); */
+                /* transform: translateX(300px); */
+                /* transform: skewY(50deg); */
+                transform: rotateX(360deg) scale(0.5);
+            }
+
+            /* 
+            [1] transform은 margin padding 이 적용되지 않는다.
+            [2] 위치를 이동시킨다면 옆에 있는 span의 문자열 같은게 같이 밀리지 않고 단독으로 움직인다.
+            [3] 즉 다른요소를 영향 주지 않고 단독으로 움직인다.
+            [4] transform mdn 에서 다양한 transform 움직임 값을 가져다 쓸 수 있다.
+            */
+        </style>
+    </head>
+    <body>
+        <img src="splash5.png" alt="">
+        <span>alsdfkasdlfkjadsflk</span>
+    </body>
+</html>

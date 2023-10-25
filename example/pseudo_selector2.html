@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            * {
+                border: 1px dashed black;
+            }
+            body{
+                height: 1000vh;
+                margin: 50px;
+            }
+            span{
+                color: tomato;
+                background-color: yellowgreen;
+                padding: 5px;
+                border-radius: 10px;
+            }
+            div > span {
+                text-decoration: underline;
+            }
+            p span{
+                color: white;
+            }
+
+            /*
+            [1] div > span{} 은 div 의 바로 아래 자식이 span 인 경우 적용하는 style 이다. 
+            [2] div span{} 으로 해버리면 div 밑에 있는 모든 span 에 적용된다. 
+            [3] p + span{} 은 p 자식이 아니라 p 랑 동등한 형제중에 바로 다음에 오는 span 이 된다.
+            [4] p ~ span{} 은 p 의 형제이고 바로 뒤가 아니어도 적용된다.
+            */
+        </style>
+
+        <title>Hello!!</title>
+    </head>
+    <body>
+        <div>
+            <span>hello</span>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod commodi et sequi ipsam odio dolorem. <span>inside</span>
+            </p>
+            <address>hi</address>
+            <span>hello2</span>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            * {
+                border: 1px dashed black;
+            }
+            a {
+                background-color: tomato;
+                color: wheat;
+                text-decoration: none;
+                padding: 3px 5px;
+                border-radius: 5px;
+                font-size: 55px;
+                /* transition: background-color 10s ease-in-out, color 5s ease-in-out; */
+                /* transition: all 0.4s ease-in-out; */
+                transition: all 0.4s cubic-bezier(0.6, 0, 0.735, 0.045);
+            }
+            a:hover {
+                border-radius: 20px;
+                background-color: wheat;
+                color: tomato;
+            }
+
+            /* 
+            [1] transition: 은 CSS에 애니메이션을 적용한다.
+            [2] transition: 대상 소요시간 에니메이션타입; 형식으로 적용한다.
+            [3] a{} 와 a:hover{} 가 있을 때, 꼭 원본 엘리멘트 안에 선언 되어야한다.
+            [4] a:hover{} 와 같은 state 안에 선언하면 작동하지 않는다.
+            [5] 대상을 all로 하여 변화하는 모든것에 적용할 수 있다.
+            [6] cubic-bezier(0.785, 0.135, 0.150, 0.860); 과 같은 값을 줘서 미리 정해진 에니메이션 말고도 설정 할 수 있다.
+            [7] transition 을 :hover{} 에 위치시키면 정방향으로는 작동하지만 원래 방향으로 돌아가는 리버스가 작동하지 않는다.
+            */
+        </style>
+    </head>
+    <body>
+        <a href="">Go home</a>
+    </body>
+</html>

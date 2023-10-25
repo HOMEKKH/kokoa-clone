@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            * {
+                border: 1px dashed black;
+            }
+            body{
+                height: 1000vh;
+                margin: 50px;
+            }
+            div {
+                width: 150px;
+                height: 150px;
+                background-color: wheat;
+                position: relative;
+            }
+            div:first-child{
+                background-color: red;
+            }
+            div:last-child{
+                background-color: teal;
+            }
+            span{
+                background-color: tomato;
+            }
+            span:nth-child(even){
+                background-color: teal;
+            }
+            /* span:nth-child(2), span:nth-child(4){
+                background-color: teal;
+            } */
+        </style>
+
+        <!-- tag명 뒤에 콜론(:) 을 찍어서 특정 태그를 찾아 style 을 적용하도록 할 수 있다.
+        여러 동일한 tag중에 제일 첫번째 것, 혹은 마지막 것, 짝수번째 것 등을 찾아 style 적용 가능. -->
+
+        <title>Hello!!</title>
+    </head>
+    <body>
+        <!-- <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div> -->
+        <span>hello</span>
+        <span>hello</span>
+        <span>hello</span>
+        <span>hello</span>
+        <span>hello</span>
+        <span>hello</span>
+        <span>hello</span>
+        <span>hello</span>
+    </body>
+</html>

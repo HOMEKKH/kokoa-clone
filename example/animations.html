@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            * {
+                border: 1px dashed black;
+            }
+            @keyframes superSexyCoinFlip {
+                /* from {
+                    transform: rotateX(0deg);
+                }
+                to {
+                    transform: rotateX(180deg);
+                } */
+                0% {
+                    transform: rotateX(0deg);
+                }
+                50% {
+                    transform: rotateX(180deg) translate(100px);
+                }
+                100% {
+                    transform: rotateX(0deg);
+                }
+            }
+            img {
+                border: 5px solid black;
+                border-radius: 50%;
+                animation: superSexyCoinFlip 5s ease-in-out infinite;
+            }
+
+            /* 
+            [1] @keyframes 에니메이션명{} 와 같은 형식으로 에니메이션을 생성할 수 있다.
+            [2] from{} to{} 를 이용하여 에니메이션의 시작점과 끝점을 설정한다.
+            [3] animation: 에 만든 에니메이션 변수를 연결하고 지속시간과 에니메이션 타입을 적어 실행시킨다.
+            [4] infinite 옵션을 추가하여 무한 반복 할 수 있다.
+            [5] 0%{},50%{},100%{} 와 같이 선언하여 진행상황을 더 잘게 쪼개서 설정할 수 있다.
+            */
+        </style>
+    </head>
+    <body>
+        <img src="splash5.png" alt="">
+        <span>alsdfkasdlfkjadsflk</span>
+    </body>
+</html>

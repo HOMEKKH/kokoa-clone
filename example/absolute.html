@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            * {
+                border: 1px dashed black;
+            }
+            body{
+                height: 1000vh;
+                margin: 50px;
+            }
+            div {
+                width: 300px;
+                height: 300px;
+                background-color: antiquewhite;
+                position: relative;
+            }
+            .green {
+                background-color: teal;
+                height: 100px;
+                width: 100px;
+                position: absolute;
+                right: 0px;
+                bottom: 0px;
+            }
+
+            /* 부모가 relative 일때 자식이 absolute 이면 부모에 앵커처럼 붙어 다님 
+            relative 한 부모를 찾지 못하면 body 를 기준으로 움직임.
+            즉 absolute 는 부모의 기준으로 움직인다. 부모의 우측 하단에 붙겠다는 의미가 된다.*/
+        </style>
+
+        <title>Hello!!</title>
+    </head>
+    <body>
+        <div>
+            <div class="green">
+
+            </div>
+        </div>
+    </body>
+</html>
