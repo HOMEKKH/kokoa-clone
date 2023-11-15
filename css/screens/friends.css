@@ -20,7 +20,7 @@
     margin-top: 25px;
     border-top: var(--main-border);
     padding-top: 15px;
-  }
+}
   
 .friends-screen__channel-header {
     margin-bottom: 30px;
@@ -38,5 +38,5 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 122px;
+    font-size: 132px;
 }
